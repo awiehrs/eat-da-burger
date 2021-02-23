@@ -1,0 +1,64 @@
+body {
+    background-color: #fce28d;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 21px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #A90409;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #ee484d;
+}
+
+.container {
+    background-color: #fffbc1;
+    text-align: center;
+    width: 650px;
+    height: 200px;
+    margin: auto;
+}
+
+.addBurger {
+    padding-top: 50px;
+}
+
+
+.burger-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+    width: 27%;
+    float: right;
+}
+
+.checkBorder{
+    color: #A90409;
+    font-size: 30px;
+}
+
+.submitBtn {
+	box-shadow:inset 0px -1px 2px -1px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:42px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+
+	font-size:22px;
+	font-weight:bold;
+	padding:6px 25px;
+	text-decoration:none;
+    margin-top: -40px;
+}
+.submitBtn:hover {
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+.submitBtn:active {
+	position:relative;
+	top:1px;
+}
