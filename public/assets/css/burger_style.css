@@ -62,3 +62,53 @@ h1 {
 	position:relative;
 	top:1px;
 }
+
+.content {
+    margin: auto;
+    max-width: 700px;
+    padding-top: 50px;
+}
+
+
+
+.menuBox {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fffbc1;
+    width: 270px;
+}
+
+.menuText {
+    font-size: 30px;
+    float: left;
+    color: #A90409;
+}
+
+.checkborder2 {
+    font-size: 15px;
+    float: right;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.checkborder3 {
+    font-size: 15px;
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.doneText{
+    font-size: 30px;
+    float: right;
+    color: #A90409;
+}
+
+.doneBox {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fffbc1;
+    width: 270px;
+}
