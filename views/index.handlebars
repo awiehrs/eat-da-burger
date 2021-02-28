@@ -1,5 +1,38 @@
-{{#each cats}}
-  {{#unless sleepy}}
-  {{> cats/cat-block sleep=true}}
-  {{/unless}}
-  {{/each}}
+<h1>━━━━• Eat Da Burger Diner •━━━━</h1>
+    <div class="createBurger-form">
+        <div class="header">
+            <img src="../img/burger.png" class="burger-img">
+        </div>
+        <div class="inputDiv">
+           <p class="addBurger"> 
+               ADD A BURGER TO THE MENU 
+               <input type="text"  required minlength="2"  size="35" class="burgerInput"><br><br>
+                <button type="submit" class="submitBtn">SU<img src="../img/burg-icon.png">MIT</button><br>
+            </p>
+        </div>
+        <p class="checkBorder">🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿</p>
+    </div>
+    <div class="content">
+        <div class="menuBox">
+            <div class="menuText"><b>MENU </b> <p class="checkborder2"> 🙾🙾🙾🙾🙾🙾🙾🙾🙾🙾🙾🙾🙾🙾🙾 </p></div>
+            <p>
+                <ul class="menuList">
+                      {{#each burgers}}
+                      {{#unless devoured}}
+                      {{> burgers/burger-block devoured=true}}
+                      {{/unless}}
+                      {{/each}}
+                </ul>
+            </p>
+        </div>
+        <div class="doneBox">
+            <div class="doneText"> <p class="checkborder3"> 🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿🙿</p><b>‎DEVOURED </b></div>
+            <p><ul class="doneList">
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/if}}
+                {{/each}}
+            </ul> </p>
+        </div>
+    </div>
