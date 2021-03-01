@@ -7,9 +7,9 @@ const burger = require('../models/burger.js');
 
 // Create all our routes and set up logic within those routes where required.
 router.get('/', (req, res) => {
-    burger.all((data) => {
-    const hbsObject = {
-      burgers: data,
+  burger.all((data) => {
+      const hbsObject = {
+        burgers: data,
     };
     console.log(hbsObject);
     res.render('index', hbsObject);
@@ -44,15 +44,15 @@ router.put('/api/burgers/:id', (req, res) => {
 });
 
 router.delete('/api/burgers/:id', (req, res) => {
-  const condition = `id = ${req.params.id}`;
+  // const condition = `id = ${req.params.id}`;
 
-  cat.delete(condition, (result) => {
-    if (result.affectedRows === 0) {
-      // If no rows were changed, then the ID must not exist, so 404
-      return res.status(404).end();
-    }
-    res.status(200).end();
-  });
+  // cat.delete(condition, (result) => {
+  //   if (result.affectedRows === 0) {
+  //     // If no rows were changed, then the ID must not exist, so 404
+  //     return res.status(404).end();
+  //   }
+  //   res.status(200).end();
+  // });
 });
 
 // Export routes for server.js to use.
