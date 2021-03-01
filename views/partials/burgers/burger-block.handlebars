@@ -2,7 +2,7 @@
 	{{name}}
 
 	<button class="change-devour" data-id="{{id}}" data-newDevour="{{devoured}}">
-		DEVOUR ME!
+		{{#if devoured}}Devour!{{else}}Eat Again!{{/if}}
 	</button>
 
 </li>

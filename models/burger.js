@@ -10,6 +10,7 @@ const burger = {
   // The variables cols and vals are arrays.
   create(cols, vals, cb) {
     orm.create('burgers', cols, vals, (res) => cb(res));
+    console.log("burger being made")
   },
   update(objColVals, condition, cb) {
     orm.update('burgers', objColVals, condition, (res) => cb(res));

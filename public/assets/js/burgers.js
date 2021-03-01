@@ -43,15 +43,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   
     // CREATE
-    const createBurgerBtn = document.getElementById('inputDiv');
+    const createBurgerBtn = document.getElementById('create-form');
   
     if (createBurgerBtn) {
       createBurgerBtn.addEventListener('submit', (e) => {
         e.preventDefault();
   
         // Grabs the value of the textarea that goes by the name, "quote"
-        const newCat = {
-          name: document.getElementById('burgerInput').value.trim(),
+        const newBurger = {
+          name: document.getElementById('ba').value.trim()
           //sleepy: document.getElementById('sleepy').checked,
         };
   
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           body: JSON.stringify(newBurger),
         }).then(() => {
           // Empty the form
-          document.getElementById('burgerInput').value = '';
+          document.getElementById('ba').value = '';
   
           // Reload the page so the user can see the new quote
           console.log('Created a new burger!');
